@@ -13,7 +13,7 @@ header{
     max-height: 20vh;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin: 0;
     padding: 0;
@@ -160,7 +160,7 @@ footer {
     font-size: 14px;
     opacity: 0;
     margin-top: 15px;
-    transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
 .boton-tooptip:hover + .tooptip {
@@ -248,43 +248,32 @@ input::placeholder {
     align-items: center;
 }
 
-.productos {
+.contenedor-buscador{
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    width: 40vw;
+    height: auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    transform: scale(1.3);
 }
-
-.producto {
-    margin: 1rem;
-    text-align: center;
+.buscador{
+    border-radius: 5px;
+    background: linear-gradient(to top, #240101bd, #ff0000);
+    color: beige;
+    box-shadow: 0 0 10px rgb(105, 105, 54);
+    padding: 5px;
+    margin-right: 10px;
 }
-
-.imagen-polaroid {
-    width: 200px;
-    height: 300px;
-    background-color: white;
-    border: 10px solid white;
-    padding: 10px;
-    display: inline-block;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-    text-align: center;
-    margin-bottom: 10px;
-    overflow: hidden;
-}
-
-.imagen-polaroid img {
-    width: 100%;
+.lupa{
+    background: none;
+    border: none;
     height: 100%;
-    object-fit: cover;
 }
-
-.imagen-polaroid p {
-    font-size: 16px;
-    margin-top: 10px;
-    font-weight: bold;
+.fa-magnifying-glass{
+    font-size: x-large;
 }
-
-.imagen-polaroid:hover {
-    transform: rotate(5deg) scale(1.05);
+.buscador:focus{
+    transform: scale(1.15);
+    transition: 2s;
 }
