@@ -94,6 +94,7 @@ main {
     text-align: center;
     overflow: hidden;
     padding: 15px;
+    background-color: white;
 }
 
 .imagen-polaroid img {
