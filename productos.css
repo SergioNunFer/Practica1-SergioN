@@ -81,7 +81,6 @@ main {
     padding: 0;
     text-align: center;
     position: relative;
-    border: 3px solid black;
     flex-shrink: 1;
     z-index: 0;
 }
